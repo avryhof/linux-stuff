@@ -5,8 +5,10 @@ sudo apt install -y unzip lxappearance gnome-tweaks msttcorefonts gtk2-engines-m
 mkdir -p ~/.themes
 wget https://github.com/B00merang-Project/Windows-10/archive/3.2.zip
 wget https://github.com/B00merang-Project/Windows-10-Dark/archive/3.2-dark.zip
-unzip -d ~/.themes/3.2.zip
-unzip -d ~/.themes/3.2-dark.zip
+unzip -d ~/.themes/ 3.2.zip
+unzip -d ~/.themes/ 3.2-dark.zip
+rm 3.2.zip
+rm 3.2-dark.zip
 # Icon theme
 cd "${WORKING_DIR}"
 git clone https://github.com/yeyushengfan258/We10X-icon-theme.git
