@@ -5,7 +5,7 @@ sudo apt install -y unzip lxappearance gnome-tweaks msttcorefonts gtk2-engines-m
 # Desktop themes
 echo "Extracting Windows 10 dark and light themes - https://github.com/B00merang-Project/Windows-10"
 sudo unzip -d /usr/share/themes/ themes/3.2.zip
-sudo unzip -d /usr/share/themes/3.2-dark.zip
+sudo unzip -d /usr/share/themes/ themes/3.2-dark.zip
 
 # Icon theme
 echo "Downloading We10X icon theme (this can take awhile) - https://github.com/yeyushengfan258/We10X-icon-theme"
@@ -25,3 +25,4 @@ echo "Cleaning up..."
 rm -fr Win-8.1-NS-S/
 
 echo "Now you can adjust your X Server application appearance with either lxappearance, or gnome-tweaks."
+echo "For themes to work in things like synaptic, you will also need to run sudo lxappearance or sudo gnome-tweaks."
