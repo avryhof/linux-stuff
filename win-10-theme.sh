@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 WORKING_DIR=${PWD}
 echo "Install pre-requisites: unzip, lxappearance, gnome-tweaks, miocrosoft core fonts, murrine theme engine, and pixmap"
-sudo apt install -y unzip lxappearance gnome-tweaks msttcorefonts gtk2-engines-murrine pixmap
+sudo apt install -y unzip lxappearance gnome-tweaks msttcorefonts gtk2-engines-murrine gtk2-engines-pixbuf
 # Desktop themes
 echo "Extracting Windows 10 dark and light themes - https://github.com/B00merang-Project/Windows-10"
 sudo unzip -d /usr/share/themes/ themes/3.2.zip
