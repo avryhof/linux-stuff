@@ -65,7 +65,7 @@ if len(cte_linux_data_list) > 0:
         supported_cte_version = supported_cte_versions[0]
         print(
             f"Your {lsb.description} ({cte_linux_version}) running Kernel {cte_linux_kernel} "
-            f"supports CTE version {supported_cte_version}."
+            f"supports CTE version {supported_cte_version}.\n"
         )
 
     else:
@@ -80,10 +80,10 @@ if len(cte_linux_data_list) > 0:
 
         print(
             f"Your {lsb.description} ({cte_linux_version}) is currently running kernel {cte_linux_kernel}. "
-            f"CTE version {supported_cte_version} supports up to kernel {supported_kernel}."
+            f"CTE version {supported_cte_version} supports up to kernel {supported_kernel}.\n"
         )
 
 else:
     print(
-        f"Your {lsb.description} ({cte_linux_version}) running Kernel {cte_linux_kernel} does not support CTE."
+        f"Your {lsb.description} ({cte_linux_version}) running Kernel {cte_linux_kernel} does not support CTE.\n"
     )
