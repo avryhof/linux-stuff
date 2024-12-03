@@ -15,7 +15,7 @@ elif [[ $CMD == available ]]; then
 elif [[ $CMD = install ]]; then
   sudo apt install linux-image-${NEW_KERNEL_VERSION}-generic --install-recommends
 elif [[ $CMD = boot ]]; then
-  sudo kexec -l -t bzImage /boot/vmlinuz-${NEW_KERNEL_VERSION} --initrd=/boot/initrd.img-${NEW_KERNEL_VERSION} --reuse-cmdline && systemctl kexec
+  sudo kexec -l -t bzImage /boot/vmlinuz-${NEW_KERNEL_VERSION}-generic --initrd=/boot/initrd.img-${NEW_KERNEL_VERSION}-generic --reuse-cmdline && systemctl kexec
 else
   echo "$0 <command> [Kernel Version]"
   echo ""
